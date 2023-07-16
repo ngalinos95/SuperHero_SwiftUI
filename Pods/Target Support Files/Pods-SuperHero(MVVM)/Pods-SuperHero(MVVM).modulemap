@@ -1,0 +1,6 @@
+framework module Pods_SuperHero_MVVM_ {
+  umbrella header "Pods-SuperHero(MVVM)-umbrella.h"
+
+  export *
+  module * { export * }
+}
