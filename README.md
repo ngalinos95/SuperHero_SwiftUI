@@ -37,6 +37,7 @@ using an open source API to create a list of heroes with a seperate view with th
 
 ## Demo
 ![](https://github.vodafone.com/nikos-galinos/HeroAPI_MVVM/blob/main/hero.gif)
+![](https://github.vodafone.com/nikos-galinos/HeroAPI_MVVM/blob/main/hero1.gif)
 
 
 
