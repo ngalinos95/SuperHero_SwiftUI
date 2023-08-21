@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct HeroRow: View {
-    var hero : SuperHeroViewModel?
+    var hero: SuperHeroViewModel?
     var body: some View {
         if let hero = hero {
             Text(hero.name )
         }
     }
 }
-
 struct HeroRow_Previews: PreviewProvider {
     static var previews: some View {
         HeroRow()

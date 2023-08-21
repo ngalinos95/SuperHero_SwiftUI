@@ -28,7 +28,7 @@ final class SuperHeroesViewModelsTests: XCTestCase {
     func testFetchData() {
         let expectation = XCTestExpectation(description: "Get fetchData expectation")
         
-        // Create an observer for the superHeroList property
+        // Create an observer for the @Published superHeroList property
         let observer = superHeroVM.$superHeroList
             .sink { heroes in
                 if heroes.count == 100 {

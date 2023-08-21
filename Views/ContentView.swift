@@ -9,49 +9,37 @@ import SwiftUI
 import PromiseKit
 
 struct ContentView: View {
-    @ObservedObject var superHeroVM = SuperHeroesListViewModel()
+    @EnvironmentObject var superHeroVM : SuperHeroesListViewModel
+    @EnvironmentObject var router : Router
     @State  var searchText = ""
-    
-    
-    
     var body: some View {
-        VStack {
-            NavigationStack{
+        NavigationStack(path: $router.path){
+            VStack {
                 List{
                     ForEach (searchText=="" ? superHeroVM.superHeroList
                              : superHeroVM.superHeroList.filter{ $0.name.lowercased().contains(searchText.lowercased()) } ){ hero in
-                        NavigationLink{ HeroLink(hero: hero)
-                                .navigationTitle(hero.name)
-                            
-                            
-                            
-                            
-                        } label : {
-                            HeroRow(hero: hero)
+                        NavigationLink(value: hero) {
+                            HeroRow(hero:hero)
                         }
-                        
-                        
-                        
                     }
-                    
-                }.searchable(text: $searchText)
-                    .navigationTitle(" Heroes ")
+                }
+                .searchable(text: $searchText)
+                .navigationTitle(" Heroes ")
+                .navigationDestination(for: SuperHeroViewModel.self) { hero in
+                    HeroLink(hero: hero)
+                }
                 
             }
         }
-        .onAppear{superHeroVM.fetchData()}
-        
-        
-        
-    }
-    
-    
-    
-    
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
     }
 }
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environmentObject(SuperHeroesListViewModel())
+            .environmentObject(Router())
+    }
+}
+
+
+
