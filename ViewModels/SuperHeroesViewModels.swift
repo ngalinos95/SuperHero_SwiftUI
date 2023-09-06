@@ -30,6 +30,7 @@ class SuperHeroesListViewModel: ObservableObject {
     }
 }
 // Create the SuperHero ViewModel in which every other models goes through its corensponding ViewModel
+// SuperHeroViewModel needs to be Hashable in order to be itterated on ForEach loop on a List
 class SuperHeroViewModel: Identifiable, Hashable {
     let id = UUID()
     var hero: SuperHero
@@ -62,7 +63,7 @@ class SuperHeroViewModel: Identifiable, Hashable {
     }
 }
 //Create the Bio ViewModel
-class BioViewModel : Identifiable{
+class BioViewModel : Identifiable, Hashable{
     let id = UUID()
     var bio: Bio
     init (bio: Bio){
