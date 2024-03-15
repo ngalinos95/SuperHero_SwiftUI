@@ -2,7 +2,7 @@
 //  SuperHeroesViewModelsTests.swift
 //  SuperHero(MVVM)Tests
 //
-//  Created by Nikos Galinos, Vodafone on 14/7/23.
+//  Created by Nikos Galinos,   on 14/7/23.
 //
 
 import XCTest

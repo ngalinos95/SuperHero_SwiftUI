@@ -2,7 +2,7 @@
 //  SuperheroModel.swift
 //  SuperHero(MVVM)
 //
-//  Created by Nikos Galinos, Vodafone on 16/6/23.
+//  Created by Nikos Galinos,   on 16/6/23.
 //
 
 
