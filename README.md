@@ -3,7 +3,9 @@
 
 This is a SwiftUI project.The main goal of the project is to create a simple Hero List application
 with MVVM deisgn pattern 
-using an open source API [https://superheroapi.com] to create a list of heroes with a seperate view with their images and some biography info and a navigation page for their powerstats
+using an open source API [https://superheroapi.com] to create a list of heroes
+with a seperate view with their images and some biography info and a navigation page for their powerstats
++ DeepLinks on powerstats and biograpghy page
 
 ## Topics Covered - Features
 - SwiftUI framework
@@ -23,7 +25,6 @@ using an open source API [https://superheroapi.com] to create a list of heroes w
 ## Authors
 
 - [@nikosgalinos]
-
 
 ## Demo
 ![](https://github.com/ngalinos95/SuperHero-MVVM-/blob/main/hero.gif)
