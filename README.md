@@ -1,34 +1,24 @@
 
-# Hero API (MVVM-SwiftUI)
+# SuperHero API (SwiftUI-MVVM)
 
 This is a SwiftUI project.The main goal of the project is to create a simple Hero List application
 with MVVM deisgn pattern 
-using an open source API to create a list of heroes with a seperate view with their images and some biography info and a navigation paage for their powerstats
+using an open source API [https://superheroapi.com] to create a list of heroes with a seperate view with their images and some biography info and a navigation page for their powerstats
 
-## Topics Covered
-
-- Algorithmic logic (correct way of calcualting and displayin the result)
-- Data model - Observable Object
-- Local Variables -State Objects
-- Text Modifications
+## Topics Covered - Features
+- SwiftUI framework
+- MVVM Design Patern
+- DI (Dependency Injection - Protocols) for Mocking Services (UnitTestable)
+- Unit Tests (Logic + UI (snaphsot testing)
+- SPM (3d party libraries with Swift Package Manager)
 - VStack,HStack,ZStack interface (with ViewScroller)
+- Grid View
 - NavigationStack , NavigationLink
-- MVVM practices
+- Updated Navigation Stack with value driven navigation (iOS 16+)
 - Get data from opensource API (Get Mapping)
 - JSON Decoder
-- Grid View
-- Updated Navigation Stack with value drived navigation
-## Features
-
-
-- Displaying correctly the images from the API 
-- Fetching data fron opensource API
-- Searchable list
-- Scrollable view of the results 
-- Navigation Stack
+- Concurrency (async- await)
 - Deep Links
-- Unit Testing
-
 
 ## Authors
 
@@ -38,6 +28,3 @@ using an open source API to create a list of heroes with a seperate view with th
 ## Demo
 ![](https://github.com/ngalinos95/SuperHero-MVVM-/blob/main/hero.gif)
 ![](https://github.com/ngalinos95/SuperHero-MVVM-/blob/main/hero1.gif)
-
-
-
